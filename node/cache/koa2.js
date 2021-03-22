@@ -69,12 +69,14 @@ app.use(async (ctx) => {
      * @descript Expires设置30秒后过期
      */
     // ctx.set('Expires', new Date(Date.now() + 30000))
+    // ctx.body = await parseStatic(filePath)
 
     /**
      * @title 强缓存
      * @descript Cache-Control max-age=300 设置30秒后过期
      */
     // ctx.set('Cache-Control', 'max-age=1')
+    // ctx.body = await parseStatic(filePath)
 
     /**
      * @title 协商缓存
